@@ -6,13 +6,13 @@ venue: "Data Carpentry, in UKZN"        # brief name of host site without addres
 address: "K1 Seminar room, K-RITH Tower Buiding, Nelson Mandela Medical School"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "za"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "-33.943155, 18.465274"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
+latlng: "-29.882179, 30.987891"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
 humandate: "September 27-28, 2018"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "09:00 - 17:00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2018-09-27      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2018-09-28        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["San Emmanuel James","Katrin Tirok"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["TBC"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["Armstrong Dzomba", "Tadi Gutsa", "Vagner Fonseca", "Yared Abera"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: ["sanemmanueljames@gmail.com", "katrintirok@gmail.com", "mashamba-thompson@ukzn.ac.za "]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:   http://pad.software-carpentry.org/2018-09-27-ukzn          # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -32,7 +32,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <!-- Logos -->
 <div>
 <table style="width:100%" >
-	
+
 	<tr>
   <!--
   <td align="right" style="background-color:white" style="width:50%" ><a href="http://www.publichealth.uct.ac.za/"><img style="display:block;" height="30%" width="60%" src="./fig/uct.jpg" alt="UCT"></a></td>
@@ -45,7 +45,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </table>
 </div>
 <div>
-   
+
 </div>
 
 <!-- See instructions in the comments below for how to edit specific sections of this workshop template. -->
@@ -79,7 +79,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
 <!--
 <h4>This is the workshop template. Delete these lines and use it to customize your own website.
-If you are running a self-organized workshop or have not put in a workshop request yet, please also fill in 
+If you are running a self-organized workshop or have not put in a workshop request yet, please also fill in
 <a href="{{site.amy_site}}/submit">this workshop request form</a> to let us know about your workshop
 and our administrator may contact you if we need any extra information.</h4>
 -->
@@ -115,7 +115,7 @@ and our administrator may contact you if we need any extra information.</h4>
 {% endif %}
 
 
-	
+
 <!--
   LOCATION
 
@@ -247,7 +247,7 @@ Please register <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0JyixzHvmIiz
 
 <!-- DO NOT EDIT SURVEY LINKS -->
 <p><em>Surveys</em></p>
-{% if page.carpentry == "swc" %} 
+{% if page.carpentry == "swc" %}
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 <p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
@@ -354,7 +354,7 @@ Please register <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0JyixzHvmIiz
 
 <h3>A spreadsheet program</h3>
 
-<p> For this workshop you will need a spreadsheet program. Many people already have Microsoft Excel installed, and if you do, you're set! 
+<p> For this workshop you will need a spreadsheet program. Many people already have Microsoft Excel installed, and if you do, you're set!
 If you need a spreadsheet program, there are a few other options, like OpenOffice and LibreOffice. Install instructions for LibreOffice, which is free and open source, are here.
   </p>
 
@@ -433,7 +433,7 @@ If you need a spreadsheet program, there are a few other options, like OpenOffic
       <p>If you are using a different browser, or if OpenRefine does not automatically open for you, point your browser at <a href="http://127.0.0.1:3333/">http://127.0.0.1:3333/</a> or <a href="http://localhost:3333">http://localhost:3333</a> to use the program.</p>
     </div>
   </div>
-  
+
 </div> <!-- End of 'OpenRefine' section. -->
 
 
@@ -458,9 +458,9 @@ If you need a spreadsheet program, there are a few other options, like OpenOffic
         from <a href="http://cran.r-project.org/index.html">CRAN</a>.
         Also, please install the
         <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-        Note that if you have separate user and admin accounts, you should run the 
-        installers as administrator (right-click on .exe file and select "Run as 
-        administrator" instead of double-clicking). Otherwise problems may occur later, 
+        Note that if you have separate user and admin accounts, you should run the
+        installers as administrator (right-click on .exe file and select "Run as
+        administrator" instead of double-clicking). Otherwise problems may occur later,
         for example when installing R packages.
       </p>
     </div>
